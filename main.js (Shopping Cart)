@@ -1,0 +1,9 @@
+let cart = [];
+let total = 0;
+
+function addToCart(name, price) {
+    cart.push({name, price});
+    total += price;
+    document.getElementById('cart').textContent = `Cart: $${total.toFixed(2)} (${cart.length})`;
+    alert(`${name} added to cart!`);
+}
