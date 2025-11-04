@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Trendifly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header>
+        <h1>My Trendifly</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="#" id="cart">Cart: $0.00 (0)</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Trendy Home, Trendy Style, Trendy You!</h2>
+        <a href="products.html" class="btn">Shop Now</a>
+    </section>
+
+    <!-- Top Picks -->
+    <section class="top-picks">
+        <h3>Top Picks</h3>
+        <div class="products">
+            <div class="product">
+                <img src="images/eyebrow-pen.jpg" alt="4-Tip Eyebrow Pen">
+                <h4>4-Tip Eyebrow Pen</h4>
+                <p>$13.97</p>
+                <button onclick="addToCart('4-Tip Eyebrow Pen', 13.97)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/gold-eye-pads.jpg" alt="24k Gold Eye Pads">
+                <h4>24k Gold Eye Pads</h4>
+                <p>$15.97</p>
+                <button onclick="addToCart('24k Gold Eye Pads', 15.97)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/mascara.jpg" alt="4D Waterproof Mascara">
+                <h4>4D Waterproof Mascara</h4>
+                <p>$17.97</p>
+                <button onclick="addToCart('4D Waterproof Mascara', 17.97)">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/waxing-beans.jpg" alt="Painless Waxing Beans">
+                <h4>Beautifily Painless Waxing Beans</h4>
+                <p>$23.97</p>
+                <button onclick="addToCart('Painless Waxing Beans', 23.97)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
