@@ -10,24 +10,21 @@ function updateCartDisplay() {
     document.getElementById('cart').innerText = `Cart: $${total.toFixed(2)} (${cart.length})`;
 }
 
-// Function to generate PayPal form dynamically for all items
 function checkoutWithPayPal() {
     if(cart.length === 0) {
         alert("Your cart is empty!");
         return;
     }
 
-    // Create a form dynamically
     const form = document.createElement('form');
     form.setAttribute('action', 'https://www.paypal.com/cgi-bin/webscr');
     form.setAttribute('method', 'post');
     form.setAttribute('target', '_top');
 
-    // PayPal cart upload
     form.innerHTML = `
         <input type="hidden" name="cmd" value="_cart">
         <input type="hidden" name="upload" value="1">
-        <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+        <input type="hidden" name="business" value="exploreenjoyfood@gmail.com">
     `;
 
     cart.forEach((item, index) => {
