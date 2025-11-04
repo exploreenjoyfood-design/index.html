@@ -7,54 +7,66 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Trendifly</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="products.html">Products</a>
-      <a href="about.html">About Us</a>
-      <a href="contact.html">Contact Us</a>
-      <span id="cart">Cart: $0.00 (0)</span>
-      <button onclick="checkoutWithPayPal()" class="btn">Checkout with PayPal</button>
-    </nav>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">My Trendifly</h1>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <div class="cart-checkout">
+        <span id="cart">Cart: $0.00 (0)</span>
+        <button onclick="checkoutWithPayPal()" class="btn checkout-btn">Checkout with PayPal</button>
+      </div>
+    </div>
   </header>
 
-  <section class="products-page">
-    <h2>All Products</h2>
-    <div class="products">
-      
-      <!-- Product 1 -->
-      <div class="product">
-        <img src="images/Copilot_20250930_231611.png" alt="4-Tip Eyebrow Pen">
-        <h4>4-Tip Eyebrow Pen</h4>
-        <p>$13.97</p>
-        <button onclick="addToCart('4-Tip Eyebrow Pen', 13.97)">Add to Cart</button>
-      </div>
+  <!-- Page Hero -->
+  <section class="hero">
+    <div class="container">
+      <h2>All Products</h2>
+    </div>
+  </section>
 
-      <!-- Product 2 -->
-      <div class="product">
-        <img src="images/Copilot_20250930_231611.png" alt="24k Gold Eye Pads">
-        <h4>24k Gold Eye Pads</h4>
-        <p>$15.97</p>
-        <button onclick="addToCart('24k Gold Eye Pads', 15.97)">Add to Cart</button>
-      </div>
+  <!-- Products Grid -->
+  <section class="top-picks">
+    <div class="container">
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="images/Copilot_20250930_231611.png" alt="4-Tip Eyebrow Pen">
+          <h4>4-Tip Eyebrow Pen</h4>
+          <p>$13.97</p>
+          <button onclick="addToCart('4-Tip Eyebrow Pen', 13.97)" class="btn">Add to Cart</button>
+        </div>
 
-      <!-- Product 3 -->
-      <div class="product">
-        <img src="images/Copilot_20250930_231611.png" alt="4D Waterproof Mascara">
-        <h4>4D Waterproof Mascara</h4>
-        <p>$17.97</p>
-        <button onclick="addToCart('4D Waterproof Mascara', 17.97)">Add to Cart</button>
-      </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="images/Copilot_20250930_231611.png" alt="24k Gold Eye Pads">
+          <h4>24k Gold Eye Pads</h4>
+          <p>$15.97</p>
+          <button onclick="addToCart('24k Gold Eye Pads', 15.97)" class="btn">Add to Cart</button>
+        </div>
 
-      <!-- Product 4 -->
-      <div class="product">
-        <img src="images/Copilot_20250930_231611.png" alt="Painless Waxing Beans">
-        <h4>Beautifily Painless Waxing Beans</h4>
-        <p>$23.97</p>
-        <button onclick="addToCart('Painless Waxing Beans', 23.97)">Add to Cart</button>
-      </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="images/Copilot_20250930_231611.png" alt="4D Waterproof Mascara">
+          <h4>4D Waterproof Mascara</h4>
+          <p>$17.97</p>
+          <button onclick="addToCart('4D Waterproof Mascara', 17.97)" class="btn">Add to Cart</button>
+        </div>
 
+        <!-- Product 4 -->
+        <div class="product-card">
+          <img src="images/Copilot_20250930_231611.png" alt="Painless Waxing Beans">
+          <h4>Beautifily Painless Waxing Beans</h4>
+          <p>$23.97</p>
+          <button onclick="addToCart('Painless Waxing Beans', 23.97)" class="btn">Add to Cart</button>
+        </div>
+      </div>
     </div>
   </section>
 
