@@ -1,54 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - My Trendifly</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - My Trendifly</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>My Trendifly</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="#" id="cart">Cart: $0.00 (0)</a>
-        </nav>
-    </header>
+  <header>
+    <h1>My Trendifly</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="#" id="cart">Cart: $0.00 (0)</a>
+    </nav>
+  </header>
 
-    <section class="products-page">
-        <h2>All Products</h2>
-        <div class="products">
-            <!-- Duplicate the product div from index.html for all products -->
-            <div class="product">
-                <img src="images/eyebrow-pen.jpg" alt="4-Tip Eyebrow Pen">
-                <h4>4-Tip Eyebrow Pen</h4>
-                <p>$13.97</p>
-                <button onclick="addToCart('4-Tip Eyebrow Pen', 13.97)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/gold-eye-pads.jpg" alt="24k Gold Eye Pads">
-                <h4>24k Gold Eye Pads</h4>
-                <p>$15.97</p>
-                <button onclick="addToCart('24k Gold Eye Pads', 15.97)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/mascara.jpg" alt="4D Waterproof Mascara">
-                <h4>4D Waterproof Mascara</h4>
-                <p>$17.97</p>
-                <button onclick="addToCart('4D Waterproof Mascara', 17.97)">Add to Cart</button>
-            </div>
-            <div class="product">
-                <img src="images/waxing-beans.jpg" alt="Painless Waxing Beans">
-                <h4>Beautifily Painless Waxing Beans</h4>
-                <p>$23.97</p>
-                <button onclick="addToCart('Painless Waxing Beans', 23.97)">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+  <section class="products-page">
+    <h2>All Products</h2>
+    <div class="products">
+      
+      <!-- Product 1 -->
+      <div class="product">
+        <img src="images/Copilot_20250930_231611.png" alt="4-Tip Eyebrow Pen">
+        <h4>4-Tip Eyebrow Pen</h4>
+        <p>$13.97</p>
+        <button onclick="addToCart('4-Tip Eyebrow Pen', 13.97)">Add to Cart</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+          <input type="hidden" name="item_name" value="4-Tip Eyebrow Pen">
+          <input type="hidden" name="amount" value="13.97">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="btn">
+        </form>
+      </div>
 
-    <script src="js/main.js"></script>
+      <!-- Product 2 -->
+      <div class="product">
+        <img src="images/Copilot_20250930_231611.png" alt="24k Gold Eye Pads">
+        <h4>24k Gold Eye Pads</h4>
+        <p>$15.97</p>
+        <button onclick="addToCart('24k Gold Eye Pads', 15.97)">Add to Cart</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+          <input type="hidden" name="item_name" value="24k Gold Eye Pads">
+          <input type="hidden" name="amount" value="15.97">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="btn">
+        </form>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product">
+        <img src="images/Copilot_20250930_231611.png" alt="4D Waterproof Mascara">
+        <h4>4D Waterproof Mascara</h4>
+        <p>$17.97</p>
+        <button onclick="addToCart('4D Waterproof Mascara', 17.97)">Add to Cart</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+          <input type="hidden" name="item_name" value="4D Waterproof Mascara">
+          <input type="hidden" name="amount" value="17.97">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="btn">
+        </form>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product">
+        <img src="images/Copilot_20250930_231611.png" alt="Painless Waxing Beans">
+        <h4>Beautifily Painless Waxing Beans</h4>
+        <p>$23.97</p>
+        <button onclick="addToCart('Painless Waxing Beans', 23.97)">Add to Cart</button>
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+          <input type="hidden" name="cmd" value="_xclick">
+          <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL">
+          <input type="hidden" name="item_name" value="Painless Waxing Beans">
+          <input type="hidden" name="amount" value="23.97">
+          <input type="hidden" name="currency_code" value="USD">
+          <input type="submit" value="Buy Now" class="btn">
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="main.js"></script>
 </body>
 </html>
